@@ -66,14 +66,11 @@ if __name__ == "__main__":
     xs = transformed[:,0]
     ys = transformed[:,1]
     
-    #set plot
-    
+    #set plot    
     fig, ax = plt.subplots()
     species = [0, 0, 0, 1, 2, 2, 1, 1, 1]
-#    line, = plt.plot(xs, ys, 'o')
     sc = plt.scatter(xs, ys, c=c, s=100, cmap=cmap, norm=norm)
     
-#    scatter  = plt.scatter(xs, ys, c=species)
     
     annot = ax.annotate("", xy=(0,0), xytext=(-20,20),textcoords="offset points",
                     bbox=dict(boxstyle="round", fc="w"),
