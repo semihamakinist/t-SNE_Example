@@ -2,6 +2,7 @@
 
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
+import numpy as np
 import os
 
 main_path = os.getcwd()
